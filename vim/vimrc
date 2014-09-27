@@ -1,0 +1,33 @@
+nnoremap <up> <nop>
+nnoremap <down> <nop>
+nnoremap <left> <nop>
+nnoremap <right> <nop>
+inoremap <up> <nop>
+inoremap <down> <nop>
+inoremap <left> <nop>
+inoremap <right> <nop>
+nnoremap j gj
+nnoremap k gk
+
+set t_Co=256
+set cc=100
+set encoding=utf-8
+set spell
+set number
+set modeline
+set laststatus=2 " always show the status line
+syntax enable
+
+set autoindent
+set expandtab
+set autoread  "Auto reload edited files
+
+filetype plugin indent on
+"Search
+set hlsearch  "Highlight
+set incsearch "Incremental
+set ignorecase
+
+" Press Space to dismiss highlighting
+nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR> 
+colorscheme monokai
